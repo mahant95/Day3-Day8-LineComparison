@@ -3,25 +3,41 @@ import java.util.*;
 
 public class LineComparision {
 
-	public static void main(String[] args) {
-		System.out.println("welcome to line comparison computation");
-		/*
-		 * UC1- taking input from user
-		 */
+	public static double equalityOfLength() { 
+		
 	Scanner line = new Scanner(System.in);
+	
 	System.out.println("Enter the value for x1");
-	int x1 = line.nextInt();
+	double x1 = line.nextDouble();
+	
 	System.out.println("Enter the value for x2");
-	int x2 = line.nextInt();
+	double x2 = line.nextDouble();
+	
 	System.out.println("Enter the value for y1");
-	int y1 = line.nextInt();
+	double y1 = line.nextDouble();
+	
 	System.out.println("Enter the value for y2");
-	int y2 = line.nextInt();
-
-	double lenghtOfLine = (Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2)));
-	System.out.println("The length of  Line i.e (x2-x1)+(y2-y1) = " + lenghtOfLine);
-	line.close();
-
+	double y2 = line.nextDouble();
+	
+	double length = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+	return length;
+}
+public static void main(String[] args) {
+	Double lengthOfLine1 = equalityOfLength();
+	
+	System.out.println("length of line 1:" + lengthOfLine1);
+	
+	Double lengthOfLine2 = equalityOfLength();
+	
+	System.out.println("lenth of line 2:" + lengthOfLine2);
+	
+	if(lengthOfLine1.equals(lengthOfLine2)) {
+		System.out.println("both lines are equal");
+		}
+		else {
+		System.out.println("Both lines are not equal");
+		}
+			
 		}
 
 	}
