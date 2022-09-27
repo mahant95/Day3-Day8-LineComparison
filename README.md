@@ -1,5 +1,3 @@
-# LineComparison 
-
 Line
 Comparison
 Problem
@@ -57,6 +55,8 @@ Program on Master Branch
 
 START
 
+UC 1
+
 As a fan of geometry, I want to
 model a line based on a point
 consisting of (x, y) co
@@ -71,7 +71,7 @@ length
 
 - y1) ^ 2)
 
-UC 1
+UC 2
 
 As a fan of geometry, I want to
 check equality of two lines
@@ -80,7 +80,8 @@ that I know when two lines are
 the equal. - Using Java equals method to check equality of 2 Lengths is
 preferable.
 
-UC 2
+
+UC 3
 
 As a fan of geometry, I want to
 compare two lines based on
@@ -89,4 +90,4 @@ one line is equal, greater or
 less than the other line. - Using Java compareTo method to compare 2 Lengths is
 preferable.
 
-UC 3
+
